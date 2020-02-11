@@ -1,4 +1,4 @@
-# Continual Learning
+# OpenLORIS-Object 
 This is the implementation of the following paper: 
 [OpenLORIS-Object: A Dataset and Benchmark towardsLifelong Object Recognition](https://arxiv.org/pdf/1911.06487.pdf)
 
