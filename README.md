@@ -67,7 +67,7 @@ main.py --ewc --savepath=ewc
 main.py --ewc --online --savepath=ewconline
 ```
 
-- Synaptic intelligenc (SI): 
+- Synaptic intelligence (SI): 
 
 ```
 main.py --si --savepath=si
@@ -99,7 +99,7 @@ main.py --replay=generative --distill --feedback --savepath=rtf
 - Cumulative: 
 
 ```
-main.py --culmulative=1 --savepath=culmulative
+main.py --cumulative=1 --savepath=cumulative
 ```
 
 - Naive: 
