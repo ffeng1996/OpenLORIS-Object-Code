@@ -37,14 +37,18 @@ Step 4: Generate the `.pkl` files of data.
 ## Running Benchmark 1
 Individual experiments can be run with `main.py`. Main option is:
 
-```python3 main.py --factor```
+```
+python3 main.py --factor
+```
 
 which kind of experiment? (`clutter`|`illumination`|`occlusion`|`pixel`)
 
 ## Running Benchmark 2
 The main option to run benchmark2 is:
 
-```python3 main.py --factor=sequence```
+```
+python3 main.py --factor=sequence
+```
 
 ## Running specific baseline methods
 - Context-dependent-Gating (XdG): 
@@ -63,13 +67,47 @@ main.py --ewc --savepath=ewc
 main.py --ewc --online --savepath=ewconline
 ```
 
-- Synaptic intelligenc (SI): `main.py --si --savepath=si`
-- Learning without Forgetting (LwF): `main.py --replay=current --distill --savepath=lwf`
-- Deep Generative Replay (DGR): `main.py --replay=generative --savepath=dgr`
-- DGR with distillation: `main.py --replay=generative --distill --savepath=distilldgr`
-- Replay-trough-Feedback (RtF): `main.py --replay=generative --distill --feedback --savepath=rtf`
-- Culmulative: `main.py --culmulative=1 --savepath=culmulative`
-- Naive: `main.py --savepath=naive`
+- Synaptic intelligenc (SI): 
+
+```
+main.py --si --savepath=si
+```
+- Learning without Forgetting (LwF): 
+
+```
+main.py --replay=current --distill --savepath=lwf
+```
+
+- Deep Generative Replay (DGR): 
+
+```
+main.py --replay=generative --savepath=dgr
+```
+
+- DGR with distillation: 
+
+```
+main.py --replay=generative --distill --savepath=distilldgr
+```
+
+- Replay-trough-Feedback (RtF): 
+
+```
+main.py --replay=generative --distill --feedback --savepath=rtf
+```
+
+- Cumulative: 
+
+```
+main.py --culmulative=1 --savepath=culmulative
+```
+
+- Naive: 
+
+```
+main.py --savepath=naive
+```
+
 
 ## Repository Structure
 ```
