@@ -32,7 +32,6 @@ class Classifier(ContinualLearner, Replayer, ExemplarHandler):
         ######------SPECIFY MODEL------######
 
         # flatten image to 2D-tensor
-        self.features = nn.d
         self.flatten = utils.Flatten()
 
         # fully connected hidden layers
