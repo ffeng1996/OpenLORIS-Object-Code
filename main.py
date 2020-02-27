@@ -39,7 +39,7 @@ parser.add_argument('--get-stamp', action='store_true')
 parser.add_argument('--no-gpus', action='store_false', dest='cuda')
 parser.add_argument('--factor', type=str, default='clutter', dest='factor')
 parser.add_argument('--savepath', type=str, default='./results', dest='savepath')
-parser.add_argument('--cumulative', type=int, default=0, dest='cu')
+parser.add_argument('--cumulative', type=int, default=0, dest='cul')
 
 parser.add_argument('--tasks', type=int, default=9)
 

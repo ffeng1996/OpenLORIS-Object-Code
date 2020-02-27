@@ -5,7 +5,7 @@ from lib.exemplars import ExemplarHandler
 from lib.continual_learner import ContinualLearner
 from lib.replayer import Replayer
 import utils
-
+import torch.nn as nn
 
 class Classifier(ContinualLearner, Replayer, ExemplarHandler):
     '''Model for classifying images, "enriched" as "ContinualLearner"-, Replayer- and ExemplarHandler-object.'''
@@ -32,6 +32,7 @@ class Classifier(ContinualLearner, Replayer, ExemplarHandler):
         ######------SPECIFY MODEL------######
 
         # flatten image to 2D-tensor
+        self.features = nn.d
         self.flatten = utils.Flatten()
 
         # fully connected hidden layers
@@ -57,11 +58,8 @@ class Classifier(ContinualLearner, Replayer, ExemplarHandler):
     @property
     def name(self):
         #return "{}_c{}".format(self.fcE.name, self.classes)
-        return "vgg_3"
+        return "vgg"
     def forward(self, x):
-        #final_features = self.fcE(self.flatten(x))
-        #return self.classifier(final_features)
-
         return self.vgg(x)
 
     def feature_extractor(self, images):
