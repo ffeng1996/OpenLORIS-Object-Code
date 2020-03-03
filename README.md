@@ -34,7 +34,7 @@ Step 4: Generate the `.pkl` files of data.
  python3 pk_gene.py
  python3 pk_gene_sequence.py
 ```
-## Quick get hands on
+## Quickly get hands on
 
 You can directly use scripts on 9 algorithms and 2 benchmarks (may need to modify arguments/parameters in `.bash` files if necessary):
 ```
@@ -160,6 +160,6 @@ Parts of code were borrowed from [here](https://github.com/GMvandeVen/continual-
 
 
 ## Issue / Want to Contribute ? 
-Open a new issue or do a pull request in case you are facing any difficulty with the code base or if you want to contribute to it.
+Open a new issue or do a pull request in case you are facing any difficulty with the code base or if you want to contribute.
 
 
